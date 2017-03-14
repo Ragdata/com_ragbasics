@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade" version="3.0">
+
+    <name>COM_RAGBASICS</name>
+
+    <creationDate>March 2017</creationDate>
+    <author>Ragdata</author>
+    <authorEmail>ragdata@ragdata.net</authorEmail>
+    <authorUrl>http://www.ragdata.net/</authorUrl>
+    <copyright>Copyright (C) 2017 Ragdata ~ All Rights Reserved</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3 only</license>
+    <version>1.0</version>
+
+    <description>COM_RAGBASICS_DESCRIPTION</description>
+
+    <files folder="site">
+
+        <filename>index.html</filename>
+        <filename>ragbasics.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+
+        <folder>controllers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+
+    </files>
+
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_ragbasics.ini</language>
+    </languages>
+
+    <media destination="com_ragbasics" folder="media">
+
+        <filename>index.html</filename>
+
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+
+    </media>
+
+    <administration folder="admin">
+
+        <menu>COM_RAGBASICS_MENU</menu>
+
+        <files folder="admin">
+
+            <filename>index.html</filename>
+            <filename>ragbasics.php</filename>
+            <filename>config.xml</filename>
+            <filename>controller.php</filename>
+
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+
+        </files>
+
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_ragbasics.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_ragbasics.sys.ini</language>
+        </languages>
+
+        <install>
+            <sql>
+                <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+            </sql>
+        </install>
+
+        <uninstall>
+            <sql>
+                <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+            </sql>
+        </uninstall>
+
+    </administration>
+
+</extension>
