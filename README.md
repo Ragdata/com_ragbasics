@@ -1,2 +1,2 @@
 # com_ragbasics
-The minimum required for a component project
+The minimum required for a Joomla Component project
